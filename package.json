@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/CristhianMotoche/shortener-react/issues"
   },
-  "homepage": "https://github.com/CristhianMotoche/shortener-react#readme"
+  "homepage": "https://github.com/CristhianMotoche/shortener-react#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
