@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import HelloWorld from './HelloWorld';
+import Home from './pages/Home';
 
-render(<HelloWorld />, document.getElementById('root'));
+render(<Home />, document.getElementById('root'));
