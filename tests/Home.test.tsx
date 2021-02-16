@@ -1,28 +1,28 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
 
-import Home from "../src/pages/Home";
+import Main from "../src/components/Main";
 
 import {render, screen, fireEvent} from "@testing-library/react";
 
 
-const withRouter = (child: JSX.Element) => (
+const withRouter = () => (
   <MemoryRouter>
-    {child}
+    <Main />
   </MemoryRouter>
 );
 
 
-describe("Home", () => {
+describe("Main", () => {
   test("shows home page", () => {
-    render(withRouter(<Home />));
+    render(withRouter());
 
     screen.getByText("Welcome to the Shortener Client!");
   });
 
   describe("when clicking on the create form", () => {
     test("shows creation short link form", () => {
-      render(withRouter(<Home />));
+      render(withRouter());
 
       const input = screen.getByText("Short something!");
       fireEvent.click(input);
