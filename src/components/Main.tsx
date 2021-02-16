@@ -1,14 +1,15 @@
 import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "../pages/Home";
 
-
-type Props = {
-  children: JSX.Element
-};
-
-const Main = ({ children }: Props): JSX.Element => (
+const Main = (): JSX.Element => (
   <body>
-    <main>
-      {children}
+    <main >
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
     </main>
   </body>
 );
