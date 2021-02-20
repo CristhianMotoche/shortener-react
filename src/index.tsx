@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 import { render } from 'react-dom';
 
-import Home from './pages/Home';
+import Main from './components/Main';
 
 render(
   <BrowserRouter>
-    <Home />
+    <Main />
   </BrowserRouter>,
   document.getElementById('root')
 );
