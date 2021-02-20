@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "../pages/Home";
+import Home from "../components/Home";
 import ShortLink from "../components/ShortLink";
 
 const Main = (): JSX.Element => (
