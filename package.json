@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode=development --open --hot",
+    "openapi": "openapi --output ./src/client --input",
     "build": "webpack --mode=production",
     "test": "jest"
   },
@@ -46,6 +47,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^4.5.1",
     "jest": "^26.6.3",
+    "openapi-typescript-codegen": "^0.8.1",
     "style-loader": "^2.0.0",
     "ts-jest": "^26.5.0",
     "ts-loader": "^8.0.14",

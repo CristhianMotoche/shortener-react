@@ -15,6 +15,12 @@ Install the project dependencies:
 npm i
 ```
 
+Autogenerate client api:
+
+```
+npm run openapi swagger.json
+```
+
 Start the dev server:
 
 ```

@@ -2,6 +2,10 @@ import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react";
 
 import ShortLink from "../src/components/ShortLink";
+import { ShortService } from "../src/client/services/ShortService";
+
+const mockService = jest.fn();
+ShortService.postShortService = mockService;
 
 describe("ShortLink", () => {
   test("allows form input to change its value", () => {

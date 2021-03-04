@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
+import { ShortService } from "../client/services/ShortService";
 
 interface Short {
   word: string;
@@ -9,10 +10,10 @@ const init: Short = {
   word: ""
 }
 
-
 const ShortLink = (): JSX.Element => {
   const [shortLink, setShortLink] = useState<string>();
-  const onSubmit = (values: Short) => {
+  const onSubmit = async (values: Short) => {
+    const resp = await ShortService.postShortService({ word: values.word });
     setShortLink("123456");
   };
 
